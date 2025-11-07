@@ -12,8 +12,8 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 RUN adduser \
-    --disbale password \
-    --home "/nonexistent" \ 
+    --disabled-password \
+    --home "/nonexistent" \
     --shell "/sbin/nologin" \
     --no-create-home \
     --uid "10001" \
