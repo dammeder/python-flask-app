@@ -11,6 +11,9 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
+COPY . .
+
+
 RUN python -m pip install -r requirements.txt
 
 
@@ -24,7 +27,6 @@ RUN adduser \
 
 USER pythonuser
 
-COPY . .
 
 
 
